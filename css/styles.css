@@ -1,0 +1,88 @@
+/**** html tags *****/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    text-align: center;
+}
+h1{
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+h5{
+    color: hsl(0, 0%, 59%);
+}
+input{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    font-size: 16px;
+}
+button{
+    margin-left: -6px;
+    padding: 12px;
+    background-color: hsl(0, 0%, 17%);
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+button:hover{
+    background-color: hsl(0, 0%, 59%);
+}
+/**** id *****/
+#mapid{
+    height: 500px;
+}
+
+/****  classes *****/
+.main-heading-div{
+    background: url("../images/pattern-bg.png") repeat-x;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.display{
+    position: absolute;
+    z-index: 1000;
+    margin-top: -40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.results{
+    line-height: 2;
+    text-align: left;
+}
+.results:not(:last-child){
+    border-right: 2px solid hsl(0, 0%, 59%);
+    padding-right: 50px;
+}
+
+/***** media Queries *****/
+@media only screen and (max-width: 600px){
+    h1{
+        margin-bottom: 20px;
+    }
+    .results:not(:last-child){
+        border-right: none;
+        padding: 0;
+    }
+    .display{
+        flex-direction: column;
+        padding: 0;
+        width: 80%;
+        margin-left: 10%;
+        padding: 10px;
+    }
+    .results{
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+}

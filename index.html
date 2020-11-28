@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main-heading-div">
+    <h1>IP Address Tracker</h1>
+
+    <form id="form-id">
+      <input type="text" placeholder="Search for any IP address or domain">
+      <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+    </form>
+  </div>
+
+
+  <div class="display">
+    <div class="results">
+      <h5>IP Address</h5>
+      <h3 id="user-ip">103.38.178.134</h3>
+    </div>
+    
+    <div class="results">
+      <h5>Location</h5>
+      <h3 id="user-location">Dehradun,IN 248001</h3>
+    </div>
+    
+    <div class="results">
+      <h5>Timezone</h5>
+      <h3 id="user-timezone">+05:30</h3>
+    </div>
+    
+    <div class="results">
+      <h5>ISP</h5>
+      <h3 id="user-isp">Helm consultants pvt ltd</h3>
+    </div>
+  
+  </div>
+
+  <div id="mapid"></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rohit negi</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <script src="./javascript/index.js"></script>
+</body>
+</html>
